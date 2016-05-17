@@ -1,2 +1,2 @@
 # karlreid.ie
-My personal site
+Repository for development of my personal site.
