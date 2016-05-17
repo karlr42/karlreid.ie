@@ -38,11 +38,11 @@
               <a class="navbar-brand" href="#/">Karl Reid</a>
             </div>
 
-            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="HeaderCtrl">
 
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#/">Home</a></li>
-                <li><a ng-href="#/about">About</a></li>
+                <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
+                <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
                 <!-- <li><a ng-href="#/">Contact</a></li> -->
               </ul>
             </div>
@@ -58,24 +58,24 @@
         <div class="container">
             <div class="pull-left">
               <kcr-copyright></kcr-copyright>
-              <p>See background image on <a href="https://goo.gl/photos/mznJ2euGcLXtktDy6">Google Photos</a></p>
+              <p>See background image on <a href="https://goo.gl/photos/mznJ2euGcLXtktDy6">Google Photos.</a></p>
             </div>
             <div class="pull-right">
-              <p>This site on <a href="https://github.com/karlr42/karlreid.ie" target="_blank">GitHub</a></p>
+              <p>This site on <a href="https://github.com/karlr42/karlreid.ie" target="_blank">GitHub.</a></p>
             </div>
         </div>
       </div>
     </div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Google Analytics -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-19037059-1');
        ga('send', 'pageview');
     </script>
 
@@ -98,6 +98,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>
