@@ -1,0 +1,35 @@
+{
+  "name": "angular-copyright",
+  "homepage": "https://github.com/karlr42/snippets/tree/master/angular-copyright",
+  "authors": [
+    "Karl Reid <karlr42@gmail.com>"
+  ],
+  "description": "An AngularJS directive for generating copyright notices.",
+  "main": "directive.js",
+  "keywords": [
+    "angular",
+    "copyright",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "_release": "f9d045e723",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f9d045e723edbefffd1dc5b69d865673fd90a8af"
+  },
+  "_source": "git://github.com/karlr42/angular-copyright.git",
+  "_target": "*",
+  "_originalSource": "karlr42/angular-copyright",
+  "_direct": true
+}

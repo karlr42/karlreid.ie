@@ -1,0 +1,12 @@
+.bg { 
+	background: url(../images/seawall_wide.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	background-size:cover
+}
+
+.fg {
+	color: inherit;
+	background-color: #eee;
+}

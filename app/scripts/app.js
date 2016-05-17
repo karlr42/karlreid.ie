@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'karlr42.angular-copyright'
   ])
   .config(function ($routeProvider) {
     $routeProvider
