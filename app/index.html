@@ -16,36 +16,34 @@
     <link rel="stylesheet" href="styles/home.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="karlreidieApp" class="bg">
+  <body ng-app="karlreidieApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="fg">
-      <div class="header">
-        <div class="navbar navbar-default" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-              <a class="navbar-brand" href="#/">Karl Reid</a>
-            </div>
+            <a class="navbar-brand" href="#/">Karl Reid</a>
+          </div>
 
-            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="HeaderCtrl">
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="HeaderCtrl">
 
-              <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-                <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
-                <!-- <li><a ng-href="#/">Contact</a></li> -->
-              </ul>
-            </div>
+            <ul class="nav navbar-nav">
+              <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
+              <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
+              <!-- <li><a ng-href="#/">Contact</a></li> -->
+            </ul>
           </div>
         </div>
       </div>
