@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'karlr42.angular-copyright'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('')
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
