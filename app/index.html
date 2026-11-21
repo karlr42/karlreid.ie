@@ -1,113 +1,83 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Karl Reid</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/home.css">
-  <!-- endbuild -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karl Reid</title>
+<meta name="description" content="Karl Reid, a software developer based in Dublin, Ireland. Work and contact information.">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/styles/site.css">
+<script src="/scripts/site.js" defer></script>
 </head>
-
-<body ng-app="karlreidieApp">
-  <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <div class="header">
-    <div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#js-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="#/">Karl Reid</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="HeaderCtrl">
-
-          <ul class="nav navbar-nav">
-            <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-            <li ng-class="{ active: isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
-            <!-- <li><a ng-href="#/">Contact</a></li> -->
-          </ul>
-        </div>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav class="container" aria-label="Main navigation"><a class="brand" href="/">Karl Reid</a><a href="/" aria-current="page">Home</a><a href="/contact/">Contact</a></nav></header>
+<main id="main" class="container"><div class="row">
+  <div class="box">
+    <div>
+      <h1>Welcome</h1>
+      <p>
+        This is the personal site of Karl Reid, a software developer based in Dublin, Ireland.
+      </p>
+    </div>
+    <hr />
+    <h2>OpenAI</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p>As of January 2025, I am working at <a href="https://openai.com/">OpenAI</a>, as a Senior Technical Support
+          Engineer.</p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://openai.com/"><img class="img-responsive" src="/images/openai-logomark.png" alt="OpenAI" class="openai-mark"
+             /></a>
       </div>
     </div>
-
-    <div class="container">
-      <div ng-view=""></div>
+    <hr />
+    <h2>Stripe</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>From April 2018 until early 2025, I worked at <a href="https://stripe.com">Stripe™</a>, as a Support
+          Engineer.</p>
+        <p>Support Engineers at Stripe help developers integrate Stripe solutions into their
+          apps, act as advocates for developers internally, and are experts on the Stripe platform
+          and APIs.</p>
+      </div>
+      <div class="col-md-6">
+        <a href="https://stripe.com"><img class="img-responsive" src="/images/stripe.png" alt="Stripe" /></a>
+      </div>
     </div>
-
-    <div class="footer">
-      <div class="container">
-        <div class="col-md-9 pull-left">
-          <kcr-copyright></kcr-copyright>
-          <em class="small">The "OpenAI" name, the OpenAI logo, the "ChatGPT" and “GPT” brands, and other OpenAI
-            trademarks, are property of OpenAI.</em>
-          <em class="small">The Stripe name and logos are trademarks or service marks of Stripe,
-            Inc. or its affiliates in the U.S. and other countries.</em>
-        </div>
-        <div class="pull-right">
-          <p>This site on <a href="https://github.com/karlr42/karlreid.ie" target="_blank">GitHub&nbsp<i
-                class="fa fa-github-square" aria-hidden="true"></i></a></p>
-        </div>
+    <hr />
+    <h2>General Audit Tool</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive" src="/images/shield.png" alt="GAT Shield" />
+      </div>
+      <div class="col-md-6">
+        <p>I have previously worked at <a href="https://generalaudittool.com/">General Audit Tool</a>, a
+          powerful auditing platform for cloud services.</p>
+        <p>I worked mainly on our GAT Shield product, an auditing solution for G Suite administrators
+          to monitor and enforce policies for a deployment of Chrome devices.</p>
+        <p>As a full stack developer, I developed and maintained features across all levels of
+          the product, from the client browser extension, to the server backend and the administrator dashboard.</p>
+      </div>
+    </div>
+    <hr />
+    <h2>CipherApps</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>In the past I worked on CipherApps, a startup that developed a security solution for cloud services.</p>
+        <p>The company was spun out from the School of Computer Science and Statistics at
+          <a href="https://www.tcd.ie/">Trinity College Dublin</a>. I was a co-founder and the lead developer.
+        </p>
+        <p>CipherApps raised funding from <a href="https://www.enterprise-ireland.com/en/">Enterprise Ireland</a>
+          and was accepted into the <a href="http://wayra.co/en/">Wayra accelerator</a>.</p>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive" src="/images/cipherapps.png" alt="CipherApps" />
       </div>
     </div>
   </div>
-
-
-  <!-- Google Analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-19037059-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <!-- build:js(.) scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
-  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-  <script src="bower_components/angular-touch/angular-touch.js"></script>
-  <script src="bower_components/angular-copyright/directive.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="scripts/app.js"></script>
-  <script src="scripts/controllers/main.js"></script>
-  <script src="scripts/controllers/contact.js"></script>
-  <script src="scripts/controllers/header.js"></script>
-  <!-- endbuild -->
+</div></main>
+<footer><div class="container"><p>© <span id="year">2026</span> Karl Reid. <a href="https://github.com/karlr42/karlreid.ie">This site on GitHub</a></p><p class="trademarks">The “OpenAI” name, the OpenAI logo, the “ChatGPT” and “GPT” brands, and other OpenAI trademarks are property of OpenAI. The Stripe name and logos are trademarks or service marks of Stripe, Inc. or its affiliates in the U.S. and other countries.</p></div></footer>
 </body>
-
 </html>
